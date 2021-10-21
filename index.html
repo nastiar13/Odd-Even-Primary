@@ -3,12 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Odd Even Primary</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <div class="container">
-        
+        <div class="left">
+          <div class="top top-left">
+            <button type="submit">Odd</button>
+            <button type="submit">Even</button>
+            <button type="submit">Primary</button>
+          </div>
+
+          <div class="bottom bottom-left">
+            <input type="number" name="input-number" id="input-number" placeholder="Input Number">
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="top top-right" id="show-number">
+            <p>1</p>
+            <p>1</p>
+            <p>1</p>
+            <p>1</p>
+          </div>
+
+          <div class="bottom bottom-right">
+            <p>hello</p>
+          </div>
+        </div>
     </div>
     <script src="script.js"></script>
   </body>
