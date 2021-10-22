@@ -14,14 +14,31 @@ body {
 p {
   display: inline-block;
   margin-right: 5px;
+  font-size: auto;
 }
 
 button {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   width: 14em;
+  font-weight: 700;
   border-radius: 10px;
-  border: none;
-  padding: 5px;
+  border: 1.5px solid #2A234E;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #2A234E;
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #1d1742;
+}
+
+button[id="reset"] {
+  margin: 0;
+  padding: 10px;
 }
 
 input {
@@ -35,7 +52,27 @@ input {
 
 input:focus {
   outline: none;
-  border: 1px solid #6179FE;
+  border: 2px solid #6179FE;
+}
+
+input::-webkit-input-placeholder {
+  text-align: center;
+  font-weight: 500;
+}
+
+input:-ms-input-placeholder {
+  text-align: center;
+  font-weight: 500;
+}
+
+input::-ms-input-placeholder {
+  text-align: center;
+  font-weight: 500;
+}
+
+input::placeholder {
+  text-align: center;
+  font-weight: 500;
 }
 
 .container {
@@ -96,7 +133,7 @@ input:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #d3d4dd;
+  background-color: #2A234E;
   border-bottom-left-radius: 20px;
 }
 
@@ -113,19 +150,11 @@ input:focus {
 
 .top-right {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  max-height: 100vh;
+  overflow: auto;
   background-color: #2A234E;
   border-top-right-radius: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   color: blanchedalmond;
 }
 
